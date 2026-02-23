@@ -1,0 +1,1319 @@
+
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{enumitem}
+
+% Biber specific stuff
+\usepackage{bibentry}
+
+% \usepackage[american]{babel}
+\usepackage[backend=biber, style=apa, url=false, doi=false]{biblatex}
+
+\usepackage{biblatex}
+
+% \addbibresource[location=remote]{https://raw.githubusercontent.com/langcog/website/main/_bibliography/citations.bib}
+\addbibresource{citations.bib}
+
+
+
+% \DeclareLanguageMapping{english}{american-apa}
+
+\nobibliography{}
+
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{Michael C. Frank}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{http://www.stanford.edu/$\sim$mcfrank/papers/cv.pdf}
+
+\geometry{
+body={6.5in, 8.5in},
+left=1.0in,
+top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+\begin{list}{}{
+  \setlength{\leftmargin}{1.5em}
+  }
+  }{
+\end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}\\
+\line(1,0){475}
+
+\vspace{0.15in}
+
+\begin{tabular}{lll}
+  Stanford University, Department of Psychology~~~ &   Phone: & (650) 724-4003 \\
+  450 Serra Mall, Room 420-278  & Email: & \href{mailto:mcfrank@stanford.edu}{\tt mcfrank@stanford.edu} \\
+  Stanford, CA 94305  & Homepage: & \href{http://langcog.stanford.edu}{\tt      http://langcog.stanford.edu}
+\end{tabular}
+
+\section*{Employment}
+
+\begin{itemize}
+  \item Stanford University
+  \subitem Benjamin Scott Crocker Professor of Human Biology (2023 -- present)
+  \subitem Professor of Psychology and (by courtesy) Linguistics (2021 - present)
+   \subitem Director, Program in Symbolic Systems (2020 -- present)
+   \subitem Director, Center for the Study of Language and Information (2020 -- 2025)
+  \subitem David and Lucile Packard Foundation Professor of Human Biology (2018 -- 2023)
+  \subitem Associate Professor of Psychology and (by courtesy) Linguistics (2014 -- 2021)
+  \subitem Assistant Professor of Psychology and (by courtesy) Linguistics (2010 -- 2014)
+\end{itemize}
+
+\section*{Education}
+
+\begin{itemize}
+  \item Massachusetts Institute of Technology
+  \subitem Ph.D (2010), Department of Brain and Cognitive Sciences
+  \subsubitem Advisor: Edward Gibson
+  \subsubitem Thesis title: ``Early word learning through communicative inference''
+  \item Stanford University
+  \subitem B.S. with Honors (2004), Symbolic Systems
+  \subitem B.A. (2004), Comparative Literature
+\end{itemize}
+
+\section*{Honors, Awards, and Fellowships}
+
+\begin{itemize}
+  \item Conference on Language Modeling (COLM) Outstanding Paper award (2024) for ``Auxiliary task demands mask the capabilities of smaller language models'' 
+  \item Fellow, American Academy of Arts and Sciences (2024)
+  \item Cognitive Development Society (CDS) Book Prize (2024) for {\it Variability and Consistency in Early Language Learning: The Wordbank Project}
+  \item Cognitive Science Society Computational Modeling Prize (2022) for Cao, Raz, Saxe, \& Frank, ``Habituation reflects optimal exploration over noisy perceptual samples''
+  \item Cognitive Science Society Diversity and Social Inequality Award (2022) for Kachergis, Francis, \& Frank, ``Estimating demographic bias on tests of children's early vocabulary''
+ \item Stanford Center for Open and Reproducible Science "Open Science Champion" Award (2022)
+ \item Dean’s Award for Distinguished Teaching in the School of Humanities and Sciences in the category of Excellence in
+Graduate Education (2021)
+   \item Society for the Improvement of Psychological Sciences (SIPS) Commendation, for Metalab (2020)
+  \item National Academy of Sciences (NAS) Troland Research Award (2020)
+  \item Society for the Improvement of Psychological Sciences (SIPS) Mission Award, for ManyBabies 1 (2019)
+  \item Cognitive Science Society Computational Modeling Prize (2019) for Peloquin, Goodman, \& Frank, ``The interactions of rational, pragmatic agents lead to efficient language structure and use''
+  \item Society for Language Development Peter Jusczyk Best Paper Award (2018) for Nordmeyer \& Frank, ``Early understanding of pragmatic principles in children’s judgments of negative sentences.''
+  \item Federation of Associations in Behavioral and Brain Sciences (FABBS) Early Career Impact Award (2017)
+  \item Klaus W. Jacobs Foundation Advanced Research Fellowship (2016)
+  \item Gordon and Dailey Pattee Faculty Fellowship (2014)
+  % \item Kavli Frontiers of Science Fellow (2014)
+  \item Association for Psychological Science Rising Star (2011)
+  \item Robert J. Glushko Dissertation Prize, Cognitive Science Society (2011)
+  % \item Cognitive Science Society Travel Award (2007, 2008, 2009)
+  % \item Society for Research in Child Development Travel Award (2009)
+  % \item Walle Nauta Award for Continued Dedication to Teaching, MIT BCS (2009)
+  \item Linguistic Society of America Bloch Fellowship (2007--2009)
+  % \item Angus MacDonald Award for Excellence in Undergraduate Teaching, MIT BCS (2008)
+  \item David Marr Prize for Best Student Paper, Cognitive Science Society (2008) for Frank, Fedorenko, \& Gibson, ``Language as a cognitive technology: English-speakers match like Pirah\~a when you don't let them count.''
+  % \item International Conference on Infant Studies Travel Award (2008)
+  % \item Neural Information Processing Systems Travel Award (2007)
+  % \item Vision Sciences/Elsevier Travel Award (2007)
+  \item National Science Foundation Graduate Fellowship (2006--2010)
+  \item Jacob Javits Fellowship for Graduate Study (2006--2010)
+\end{itemize}
+
+\section*{Publications}
+
+\subsection*{Books}
+
+\begin{enumerate}
+
+  \item Frank, M. C. \& Majid, A., Eds. (2024). {\it The Open Encyclopedia of Cognitive Science}. MIT Press. \url{http://oecs.mit.edu}
+
+  \item \fullcite{frank2021}. \url{http://experimentology.io}
+
+  \item \fullcite{frank2020}. \url{http://wordbank-book.stanford.edu}
+
+\end{enumerate}
+
+
+\subsection*{Peer-Reviewed Journal Articles}
+
+\begin{enumerate}[resume]
+
+  % accepted pending data collection
+
+  \item \fullcite{long2020consistency}.
+
+
+  \item \fullcite{schuwerk2021}.
+
+
+  \item \fullcite{tsui2021}.
+
+  % 2025
+  \item \fullcite{bohn2025}.
+
+  \item \fullcite{prein2024measuring}.
+
+  \item \fullcite{raz2025}.
+
+  % 2024 
+  
+  \item \fullcite{singh2024}.
+  
+  \item \fullcite{tenenbaum2024}.
+
+  \item \fullcite{fitch2024}.
+
+  \item \fullcite{lu2024}.
+
+  \item \fullcite{long2021parallel}.
+  
+  \item \fullcite{zettersten2024}.
+
+  \item \fullcite{tan2024}.
+
+  \item \fullcite{tamis-lemonda2023}.
+  
+  \item \fullcite{portelance2023}.
+
+  \item \fullcite{schreiner2022}.
+  
+  \item \fullcite{cao2022b}.
+
+  \item \fullcite{chuey2024}.
+  
+  \item \fullcite{kellier2022}.
+  
+  \item \fullcite{swanson2022}.
+
+  \item \fullcite{soderstrom2021}.
+
+  \item \fullcite{lucca2021}.
+
+  % 2023
+
+  \item \fullcite{baumgartner2023}.
+
+  \item \fullcite{bohn2023}.
+
+  \item \fullcite{boyce2023b}.
+
+  \item \fullcite{doebel2023}
+
+  \item \fullcite{fortier2018ad-hoc}.
+
+  \item \fullcite{frank2023b}.
+
+  \item \fullcite{long2023}.
+
+  \item \fullcite{nordmeyer2023}.
+
+  \item \fullcite{portelance2023b}. 
+
+  \item \fullcite{singh2022}.
+
+  \item \fullcite{wu2022}.  
+
+  % 2022
+
+  \item \fullcite{bohn2022}.
+
+  \item \fullcite{bohn2022b}.
+
+
+  \item \fullcite{cao2022a}. {\bf[Cognitive Science Society Computational Modeling Prize]}
+
+  \item \fullcite{geiger2020b}.
+
+  \item \fullcite{gennetian2022}.
+
+  \item \fullcite{hawkins2021}.
+
+  \item \fullcite{jasbi2021}.
+
+  \item \fullcite{jasbi2021learning}.
+
+  \item \fullcite{jiang2021}.
+
+  \item \fullcite{kachergis2021}.
+
+  \item \fullcite{kachergis2022d}. {\bf[Cognitive Science Society Diversity and Social Inequality Prize]}
+
+  \item \fullcite{kachergis2021cat}.
+
+  \item \fullcite{kartushina2021}.
+
+  \item \fullcite{kominsky2021}.
+
+  \item \fullcite{lewis2021}.
+
+  \item \fullcite{long2022}.
+
+  \item \fullcite{long2020c}.
+
+  \item \fullcite{zettersten2022}.
+
+  % 2021
+
+  \item \fullcite{bohn2021}.
+
+  \item \fullcite{byers-heinlein2017a-multi-lab}.
+
+  \item \fullcite{carstensen2021}
+
+  \item \fullcite{chuey2021}
+
+  \item \fullcite{demayo2021}.
+
+  \item \fullcite{hardwicke2021}.
+
+  \item \fullcite{jasbi2021}.
+
+  \item \fullcite{sullivan2021}.
+
+  \item \fullcite{wu2021b}.
+
+  \item \fullcite{zelazo2021}.
+
+  \item \fullcite{zhao2021}.
+
+  % 2020
+
+  \item \fullcite{bohn2020}.
+
+  \item \fullcite{bohn2019}.
+
+  \item \fullcite{byers-heinlein2019}.
+
+  \item \fullcite{ebersole2019}.
+
+  \item \fullcite{fourtassi2020how}.
+
+  \item \fullcite{fourtassi2020continuous}.
+
+  \item \fullcite{fourtassi2019growth}.
+
+  \item \fullcite{gennetian2019}.
+
+  \item \fullcite{hawkins2019}.
+
+  \item \fullcite{hembacher2018early}.
+
+  \item \fullcite{hembacher2018}.
+
+  \item \fullcite{lewis2020}.
+
+  \item \fullcite{macdonald2020}.
+
+  \item \fullcite{mathur2018}.
+
+  \item \fullcite{peloquin2020}.
+
+  \item \fullcite{sheskin2020}.
+
+  \item \fullcite{tsuji2020}.
+
+  \item \fullcite{yoon2019}.
+
+  \item \fullcite{zhuang2020}.
+
+  \item \fullcite{consortium2017quantifying}.
+
+  % 2019
+
+  \item \fullcite{braginsky2019}.
+
+  \item \fullcite{hardwicke2019}.
+
+  \item \fullcite{sanchez2019}.
+
+  \item \fullcite{yoon2017developmental}.
+
+  % 2018
+
+  \item \fullcite{bergmann2017promoting}.
+
+  \item \fullcite{hardwicke2018data}.
+
+  \item \fullcite{hawkins2018improving}.
+
+  \item \fullcite{lewis2018still}.
+
+  \item \fullcite{klein2018practical}.
+
+  \item \fullcite{nordmeyer2018early}. {\bf Society
+for Language Development Peter Jusczyk Best Paper Award.}
+
+  \item \fullcite{srinivasan2018the-role}.
+
+  % 2017
+
+  \item \fullcite{barner2017a-one-year}.
+
+  \item \fullcite{brooks2017the-role}.
+
+  \item \fullcite{casillas2017cues}.
+
+  \item \fullcite{frank2017a-collaborative}.
+
+
+  \item \fullcite{horowitz2017the-trouble}.
+
+
+  \item \fullcite{macdonald2017social}.
+
+  \item \fullcite{meylan2017the-emergence}.
+
+  \item \fullcite{ouyang2017semantic}.
+
+  \item \fullcite{rasanen2017pre-linguistic}.
+
+  \item \fullcite{yurovsky2017preschoolers}.
+
+  % 2016
+
+  \item \fullcite{goodman2016pragmatic}.
+
+  \item \fullcite{lewis2016understanding}.
+
+  \item \fullcite{anderson2016response}.
+
+  \item \fullcite{frank2016comment}.
+
+  \item \fullcite{frank2016wordbank}.
+
+  \item \fullcite{lewis2016length}.
+
+  \item \fullcite{waskom2016adaptive}.
+
+  \item \fullcite{barner2016learning}.
+
+  \item \fullcite{frank2016using}.
+
+  \item \fullcite{horowitz2016childrens}.
+
+  \item \fullcite{sullivan2016intensive}.
+
+  % 2015
+
+  \item \fullcite{hall2015quantifying}.
+
+  \item \fullcite{horowitz2015young}.
+
+  \item \fullcite{goodman2015relevant}.
+
+  \item \fullcite{osc2015estimating}.
+
+  \item \fullcite{phillips2015a-second}.
+
+  \item \fullcite{potts2015embedded}.
+
+  \item \fullcite{roy2015predicting}.
+
+  \item \fullcite{stiller2015ad-hoc}.
+
+  \item \fullcite{yurovsky2015an-integrative}.
+
+  \item \fullcite{yurovsky2015beyond}.
+
+  % 2014
+
+  \item \fullcite{frank2014visual}.
+
+  \item \fullcite{frank2014inferring}.
+
+  \item \fullcite{nordmeyer2014the-role}.
+
+  \item \fullcite{rohde2014markers}.
+
+  \item \fullcite{yoon2014cultural}.
+
+  % 2013
+
+  \item \fullcite{frank2013throwing}.
+
+  \item \fullcite{frank2013social}.
+
+  \item \fullcite{frank2013learning}.
+
+  \item \fullcite{kurumada2013zipfian}.
+
+  \item \fullcite{luong2013parsing}.
+
+  % 2012
+
+  \item \fullcite{frank2012verbal}.
+
+  \item \fullcite{frank2012predicting}.
+
+  \item \fullcite{frank2012teaching}.
+
+  \item \fullcite{frank2012measuring}.
+
+  \item \fullcite{shafto2012learning}.
+
+  \item \fullcite{osc2012an-open}.
+
+  % 2011
+
+  \item \fullcite{frank2011representing}.
+
+  \item \fullcite{frank2011overcoming}.
+
+  \item \fullcite{frank2011three}.
+
+  % 2010
+
+  \item \fullcite{frank2010modeling}.
+
+  % 2009
+
+  \item \fullcite{fletcher-watson2009eye-movements}.
+
+  \item \fullcite{frank2009using}.
+
+  \item \fullcite{frank2009information}.
+
+  \item \fullcite{frank2009development}.
+
+  \item \fullcite{johnson2009abstract}.
+
+  % 2008
+
+  \item \fullcite{frank2008number}.
+
+  \item \fullcite{johnson2008development}.
+
+  \item \fullcite{oppenheimer2008a-rose}.
+
+  % 2007
+
+  \item \fullcite{winawer2007russian}.
+
+\end{enumerate}
+
+\subsection*{Chapters, Commentaries, and other Manuscripts}
+
+\begin{enumerate}[resume]
+
+  \item \fullcite{coles2023}.
+
+  \item \fullcite{frank2023c}.
+
+  \item \fullcite{frank2023}.
+  
+  \item \fullcite{marchman2023}.
+
+  \item \fullcite{syed2023}.
+  
+  \item \fullcite{kachergis2022}.
+
+  \item \fullcite{visser2021}.
+
+  \item \fullcite{tsui2021b}.
+
+  \item \fullcite{mahowald2020}.
+
+  \item \fullcite{frank2019}.
+
+  \item \fullcite{frank2019nbest}.
+
+  \item \fullcite{frank2018great}.
+
+  \item \fullcite{hardwicke2018a-bayesian}.
+
+  \item \fullcite{lewis2016linguistic}.
+
+  \item \fullcite{frank2016chasing}.
+
+  \item \fullcite{frank2013learningwords}.
+
+  \item \fullcite{frank2012cross-cultural}.
+
+  \item \fullcite{fernald2012finding}.
+
+  \item \fullcite{johnson2008development-of}.
+
+\end{enumerate}
+
+\subsection*{Peer-Reviewed Conference Proceedings}
+
+\begin{enumerate}[resume]
+
+
+% 2024
+
+\item \fullcite{hu2024}. {\bf COLM Oral Spotlight, Outstanding Paper Award}
+  \item \fullcite{tan2024b}.
+  \item \fullcite{feng2024}.
+  \item \fullcite{shannon2024}.
+  \item \fullcite{chuey2024c}.
+  \item \fullcite{cao2024}.
+  \item \fullcite{sparks2024}.
+  \item \fullcite{martinez2024}.
+  \item \fullcite{kachergis2024}.
+  \item \fullcite{carstensen2024}.
+  \item \fullcite{tan2024c}.
+  \item \fullcite{abdelrahim2024}.
+
+
+% 2023
+
+  \item \fullcite{boyce2023}.
+
+  \item \fullcite{cao2023}.
+
+  \item \fullcite{le2023}.
+
+  \item \fullcite{raz2023}.
+  
+  \item \fullcite{raz2023b}.
+
+  \item \fullcite{williams2023}.
+  
+  \item \fullcite{wu2023}.
+
+  % 2022
+  \item \fullcite{boyce2022}.
+
+  \item \fullcite{chuey2022}.
+
+  \item \fullcite{kachergis2022c}.
+
+  \item \fullcite{williams2022}.
+
+  % 2021
+
+  \item \fullcite{carstensen2021b}.
+
+  \item \fullcite{holdaway2021}.
+
+  \item \fullcite{long2021}.
+
+  \item \fullcite{kachergis2021predicting}.
+
+  \item \fullcite{wu2021}.
+
+  \item \fullcite{zettersten2021}.
+
+
+  % 2020
+
+ \item \fullcite{fourtassi2020}.
+
+  \item \fullcite{geiger2020}.
+
+  \item \fullcite{long2020}.
+
+  \item \fullcite{portelance2020}.
+
+  \item \fullcite{stenhaug2020}.
+
+  % 2019
+
+  \item \fullcite{bohn2019integrating}.
+
+\item \fullcite{fourtassi2019development}.
+
+  \item \fullcite{fourtassi2019continuous}.
+
+  \item \fullcite{long2019}.
+
+  \item \fullcite{macdonald2019integration}.
+
+  \item \fullcite{peloquin2019interactions}. {\bf[Cognitive Science Society Computational Modeling Prize - Language]}
+
+  \item \fullcite{yoon2019preschool}.
+
+  % 2018
+  \item \fullcite{asaba2018praise}.
+
+  \item \fullcite{fourtassi2018networks}.
+
+  \item \fullcite{jasbi2018disjunction}.
+
+  \item \fullcite{long2018drawing}.
+
+  \item \fullcite{macdonald2018noisy}.
+
+  \item \fullcite{nordmeyer2018individual}.
+
+  \item \fullcite{sanchezlong2018visual}.
+
+
+  \item \fullcite{nordmeyer2018individual}.
+
+  \item \fullcite{yoonmacdonald2018active}.
+
+  % 2017
+  \item \fullcite{doyle2017alignment}.
+
+  \item \fullcite{fourtassi2017word}.
+
+  \item \fullcite{hawkins2017convention}.
+
+  \item \fullcite{hembacher2017children}.
+
+  \item \fullcite{jasbi2017semantics}.
+
+  \item \fullcite{macdonald2017information}.
+
+  \item \fullcite{ouyang2017pedagogical}.
+
+  \item \fullcite{yoon2017indirect}.
+
+  % 2016
+  \item \fullcite{braginsky2016from}.
+
+  \item \fullcite{crone2016inferring}.
+
+  \item \fullcite{doyle2016a-robust}.
+
+  \item \fullcite{doyle2016investigating}.
+
+  \item \fullcite{frank2016performance}.
+
+  \item \fullcite{hembacher2016measuring}.
+
+  \item \fullcite{lewis2016linguisticb}.
+
+  \item \fullcite{macdonald2016when}.
+
+  \item \fullcite{nordmeyer2016distinguishing}.
+
+  \item \fullcite{peloquin2016determining}.
+
+  \item \fullcite{pusiol2016vision-based}.
+
+  \item \fullcite{schneider2016speed}.
+
+  \item \fullcite{yoon2016talking}.
+
+  \item \fullcite{yurovsky2016linguistic}.
+
+  % 2015
+
+  \item \fullcite{braginsky2015developmental}.
+
+  \item \fullcite{horowitz2015sources}.
+
+  \item \fullcite{lewis2015conceptual}.
+
+  \item \fullcite{macdonald2015referential}.
+
+  \item \fullcite{nordmeyer2015the-pragmatics}.
+
+  \item \fullcite{schneider2015large-scale}.
+
+  \item \fullcite{yoon2015childrens}.
+
+  \item \fullcite{yurovsky2015signatures}.
+
+  \item \fullcite{doyle2015shared}.
+
+  \item \fullcite{doyle2015audience}.
+
+  \item \fullcite{rasanen2015unsupervised}.
+
+  % 2014
+
+  \item \fullcite{schuster2014speaker-independent}.
+
+  \item \fullcite{frank2014modeling}.
+
+  \item \fullcite{horowitz2014preschoolers}.
+
+  \item \fullcite{lewis2014the-structure}.
+
+  \item \fullcite{pusiol2014discovering}.
+
+  \item \fullcite{vogel2014learning}.
+
+  \item \fullcite{yurovsky2014beyond}.
+
+  % 2013
+
+  \item \fullcite{smith2013learning}.
+
+  \item \fullcite{casillas2013the-development}.
+
+  \item \fullcite{frank2013developmental}.
+
+  \item \fullcite{horowitz2013young}.
+
+  \item \fullcite{lewis2013modeling}.
+
+  \item \fullcite{lewis2013an-integrated}.
+
+  \item \fullcite{meylan2013modeling}.
+
+  \item \fullcite{nordmeyer2013measuring}.
+
+  \item \fullcite{yurovsky2013online}.
+
+  % 2012
+
+  \item \fullcite{tice2012cues}.
+
+  \item \fullcite{johnson2012exploiting}.
+
+  \item \fullcite{frank2012measuring}.
+
+  \item \fullcite{horowitz2012learning}.
+
+  \item \fullcite{meylan2012modeling}.
+
+  \item \fullcite{ouyang2012semantic}.
+
+  \item \fullcite{roy2012relating}.
+
+  \item \fullcite{smith2012zero}.
+
+  % 2011
+
+  \item \fullcite{kurumada2011zipfian}.
+
+  \item \fullcite{stiller2011ad-hoc}.
+
+  \item \fullcite{rohde2011markers}.
+
+  \item \fullcite{tily2011the-learnability}.
+
+  \item \fullcite{yoon2011thinking}.
+
+  % 2010
+
+  \item \fullcite{johnson2010synergies}.
+
+  \item \fullcite{jones2010learning}.
+
+  \item \fullcite{vosoughi2010contributions}.
+
+  \item \fullcite{frank2010beyond}.
+
+  % 2009
+
+  \item \fullcite{vul2009explaining}.
+
+  \item \fullcite{frank2009continuity}.
+
+  \item \fullcite{frank2009informative}.
+
+  \item \fullcite{ichinco2009cross-situational}.
+
+  \item \fullcite{roy2009exploring}.
+
+  % 2008
+
+  \item \fullcite{frank2008language}. {\bf [Cognitive Science Society Marr Prize for Best Student Paper]}
+
+  \item \fullcite{frank2008principles}.
+
+  % 2007
+
+  \item \fullcite{frank2007a-bayesian}.
+
+  \item \fullcite{frank2007modeling}.
+
+  \item \fullcite{frank2007word}.
+
+  % 2006
+
+  \item \fullcite{johnson2006developmental}.
+
+  \item \fullcite{witthoft2003effects}.
+
+  \item \fullcite{boroditsky2001roles}.
+
+\end{enumerate}
+
+\section*{Grants, Gifts, and Contracts}
+
+\begin{itemize}
+
+  \item Jacobs LEVANTE Data Coordinating Center. 1/1/25 -- 12/31/27. 4,800,000 CHF.
+
+  \item Amazon Compute Grants. 6/1/24. \$30,000.
+  
+  \item Amazon Research. 1/1/24 -- 12/31/25.  \$100,000.
+
+  \item Microsoft Accelerate Program. 10/1/23 -- 3/1/24.  \$20,000.
+
+  \item Stanford Vice Provost and Dean of Research.  1/1/24 -- 12/31/25. \$80,000.
+
+  \item Jacobs LEVANTE Data Coordinating Center. 7/1/23 -- 12/31/24.  1,800,000 CHF.
+
+  \item Jacobs Foundation Creating Impact Science Program (CRISP). 1/1/24 -- 12/31/25.  150,000 CHF.
+
+  \item Schmidt Futures. 9/1/21 -- 8/31/24. ``BabyLearn: Advancing AI and Predictive Models of Grounded Child Language Learning Through Ultra-Dense Recordings of Children’s Early Egocentric Experience.'' \$750,000.
+
+  \item NIH R01. (Co-PI, with PI Maya Mathur). 9/1/21 -- 8/31/25. ``Statistical Methods for Modern Evidence Syntheses with Multiple Biases.'' \$1,337,900. 
+
+  \item Stanford Human-Centered AI Institute Hoffman-Yee Stage 2 Award. (PI: Daniel Yamins, 4 Co-PI team). 6/1/20 -- 5/31/21. ``Learning to Play: Using the Learning Principles of Early Childhood to Build Self-Supervising AI Agents and Understand Developmental Variability.'' \$500,000.
+
+  \item Stanford Child Health Research Initiative: Structural Racism, Social Injustice and Health Disparities Pilot Grant -  (PI),  1/21 -- 12/21, ``Measuring Children's Early Vocabulary Using Large Scale Data from Diverse
+Families.''  \$34,941.
+
+  \item Stanford Human-Centered AI Institute Hoffman-Yee Stage 1 Award. (PI: Chris Potts, 6 Co-PI team). 6/1/20 -- 5/31/21. ``Towards grounded, adaptive communication agents.'' \$500,000.
+
+  \item Stanford Human-Centered AI Institute Hoffman-Yee Stage 1 Award. (PI: Daniel Yamins, 5 Co-PI team). 6/1/20 -- 5/31/21. ``Learning to Play: Using the Learning Principles of Early Childhood to Build Self-Supervising AI Agents and Understand Developmental Variability.'' \$500,000.
+
+  \item Facebook AI Research. (Co-PI: Daniel Yamins). 6/1/20 -- 5/31/22. ``Learning to play: understanding infant development with intrinsically motivated artificial agents.'' \$270,000.
+
+  \item Institute for Research in the Social Sciences. 6/1/20 -- 5/31/21. ``Using an Online Platform to Measure Early Language in Children from Diverse Families.'' \$10,000.
+
+  \item NSF Research Experience for Undergraduates (Co-PI: Chris Potts, Linguistics). Renewal. 5/1/20 -- 4/30/23. ``REU Site: Language, Cognition, and Computation.'' \$379,000.
+
+  \item Fetzer-Franklin Foundation Metascience award. ``MetaLab: from meta-analysis to mega-analysis." 1/1/2020 - 12/31/2020:  \$20,000.
+
+  \item John S. McDonald Foundation. Collaborative grant ``The ontogeny of propositional thought.'' PI: Susan Carey. Subcontract to Stanford:  \$76,000.
+
+  \item Stanford Human-centered AI institute. 5/1/19 -- 4/30/20. ``Learning to Play: Understanding Infant Development with Intrinsically Motivated Artificial Agents.'' \$75,000.
+
+  \item NIH R01 (Co-I, with Antonio Hardan and Karen Parker, Psychiatry). 7/1/17 -- 3/31/22. ``Intranasal vasopressin treatment in children with autism.'' \$3,864,801.
+
+  \item Gift from Kinedu, Inc. (second) for the purpose of studying electronically-delivered parenting interventions. 3/1/18. \$80,000.
+
+  \item Contract from Kinedu, Inc. for the purpose of studying electronically-delivered parenting interventions. 3/1/18 -- 2/28/20. \$160,000.
+
+  \item Stanford Data Science Institute. 9/1/18 -- 8/31/19. ``Lexical networks in children's early language.'' \$50,000.
+
+  \item Stanford Center at Peking University Faculty Fellowship. 9/1/18. Funding for collaborative meetings in Beijing. \$12,000.
+
+  \item Jacobs Foundation. 10/1/18 -- 9/30/20. ``A roadmap towards integrating African labs into international collaborative research on early cognitive/language development.'' \$148,733.
+
+  \item Zhou Gift for Research on Language Development. 11/1/17 -- 10/31/29. \$400,000 (of initial \$1,000,000 pledge).
+
+  \item NSF Research Experience for Undergraduates (Co-PI: Chris Potts, Linguistics). 5/1/17 -- 4/30/20. ``REU Site: Language, Cognition, and Computation.'' \$283,231.
+
+  \item Jacobs Foundation Advanced Research Fellowship. 1/1/17 -- 12/31/20. 400,000 CHF.
+
+  \item Berkeley Institute for Transparency in the Social Sciences (Co-Investigators: Christina Bergmann, Sho Tsuji, Alex Cristia). 12/1/16 - 11/31/17. ``MetaLab: Paving the way for easy to use, dynamic, crowdsourced meta-analyses.'' \$29,100.
+
+  \item Association for Psychological Science Grant to support ManyBabies 1 Data Collection. Regranted to participating labs. 9/15/16 -- 9/15/17. \$52,000.
+
+  \item NSF DRK (Co-PI: David Barner, UCSD). 9/1/15 -- 8/31/16. ``Collaborative Research: RAPID: Evaluating the Cognitive and Educational Benefits of Mental Abacus Training.'' Stanford budget: \$99,958.
+
+  \item Gift from Kinedu, Inc. for the purpose of studying electronically-delivered parenting interventions. \$160,000.
+
+  \item France-Stanford Collaborative Grant (Co-PI: Emmanuel Dupoux, LSCP, Paris). 9/1/2015 -- 8/31/2016 ``Learning Sound and Meaning Jointly in Early Language Acquisition.'' \$14,000.
+
+  \item NSF Perception, Action, and Cognition (Co-PIs: Roger Levy, UCSD; Chris Potts, Stanford). 9/1/15 -- 8/31/18. ``Collaborative Research: CompCog: Broad-coverage probabilistic models of communication in context.'' Stanford budget: \$427,940.
+
+  \item NSF Development and Learning Sciences. 7/1/15 -- 6/30/18. ``Wordbank: An open repository for developmental vocabulary data.'' \$502,087.
+
+  \item NIH R21 (Co-PI, with Antonio Hardan and Grace Gengoux, Psychiatry), 12/13 -- 12/15, ``Pivotal response treatment package for young children with autism.''  \$431,750.
+
+  \item Department of the Navy (Co-PI, with Chris Potts, Linguistics, and Noah Goodman, Psychology), 01/13 -- 12/15, ``Grounded language understanding as social cognition.''  \$494,731.
+
+  \item John Merck Scholars (PI), 5/11 -- 5/15, ``Social attention and word learning in typical development and autism spectrum disorders.''  \$300,000.
+
+  \item Stanford Bio-X Interdisciplinary Initiatives Program (Co-PI, with Fei-Fei Li, Computer Science), 1/13 -- 12/14, ``Computational methods for characterizing children's first-person social experiences.''  \$150,000.
+
+  \item Stanford Child Health Research Initiative (PI), 2/13 -- 2/14, ``Social and attentional components of early word learning.''  \$32,000.
+
+  \item Australian Research Council Discovery Proposal DP110102506 (Partner Investigator, with PIs Mark Johnson and Katherine Demuth, Macquarie University), 6/11 -- 6/13, ``Computational models of synergies in human language acquisition.''  \$368,000.
+
+  \item Hellman Faculty Scholars (PI), 9/11 -- 9/12, ``Characterization of children's social attention via eye-tracking at the San Jose Children's Discovery Museum.''  \$36,400.
+
+  \item Humanities Center Workshop (Co-Organizer, with Chris Potts, Linguistics, and Krista Lawlor, Philosophy), 9/11 -- 9/12, ``Context dependence in language and cognition.''  \$12,000.
+
+  \item NSF Doctoral Dissertation Research Improvement Grant \#0746251 (Co-PI, with Edward Gibson, MIT), 2/07 -- 2/09, ``Empirical studies and probabilistic models of word segmentation and word learning.''  \$12,000.
+\end{itemize}
+
+\section*{Invited Presentations (Selected)}
+
+\begin{itemize}
+  \item Yale Wu Tsai Neurosciences Inspiring Speakers Series, September 2024.
+  \item Meta AI Research, July 2024
+  \item International Association for the Study of Child Language Keynote, July 2024.
+  \item Simons Foundation Workshop, Berkeley, June 2024
+  \item CVPR EgoVis Workshop Keynote, June 2024.
+  \item Jacobs Foundation Annual Conference, May 2024.
+  \item Santa Fe Institute Colloquium, March 2024.
+  \item Teacher's College Colloqium, February 2024.
+  \item Ecole Normale Superieure, Department d'Etudes Cognitives Colloqiuium, July 2023.
+  \item Max Planck Institute for Evolutionary Anthropology, July 2023.
+  \item IBM Research Talk Series, June 2023.
+  \item NYU Psych/Data Science Colloquium, May 2023.
+  \item University of Amsterdam LOT Winter School Schultink Lecture, January 2023.
+  \item University of Amsterdam Psych Methods Colloquium, January 2023.
+  \item Simons Foundation Autism Research Initiative, December 2022.
+  \item Columbia University Faculty Seminar, November 2022.
+  \item Keynote at Samvera User Conference, October 2022.
+  \item Dagstuhl Workshop tutorial, October 2022.
+  \item LUCID Network Colloquium, October 2022.
+  \item Barnard Cognitive Science Colloquium, September 2022.
+  \item Goettingen University Colloquium, June 2022.
+  \item Society for Research in Child Development Webinar on Global Diversity,
+  April 2022.
+  \item Yale Taylor Memorial Lecture, March 2022.
+  \item George Washington University Colloquium, February 2022.
+  \item UPenn MindCore Colloquium, February 2022.
+  \item China Open Science Network, December 2021.
+  \item Durham RIOT Science Club, November 2021.
+  \item L+ International Summer School, July 2021.
+  \item Ecole Normale Superieure, Department d'Etudes Cognitives Colloqiuium, May 2021.
+  \item Stanford Human-Centered Artificial Intelligence Speaker Series, May 2021.
+  \item Keynote at Empirical Methods in Language Acquisition Research (EMLAR), April 2021.
+  \item Duolingo, Inc. Colloquium, March 2021.
+  \item Invited Student Workshop, Boston University Conference on Language Development, November 2020.
+  \item Keynote at Western Psychological Association, October 2020.
+  \item University of Massachusetts, Amherst Colloquium, September 2020.
+  \item International Congress on Infant Studies invited symposium, June 2020.
+  \item Keynote at Cross-linguistic Perspectives on Processing and Learning, October 2019.
+  \item Keynote at paEpsy (German Psychological Association Developmental Subsection), September 2019.
+  \item Bing Nursery School Distinguished Speaker Lecture. May 2019.
+  \item Invited keynote at Royal Society meeting, ``Big data for better science: technologies for measuring behaviour,'' February 2019.
+  \item University of Oregon Psychology Colloquium, October 2018.
+  \item National Institutes of Health Behavioral and Social Sciences Research Coordinating Committee, October 2018.
+  \item Tsinghua University Linguistics Colloquium, September 2018.
+  \item Keynote at Uncertainty in Artificial Intelligence, July 2018.
+  \item Legrain Conference at Ecole Normale Superieure, July 2018.
+  \item Northwestern Cognitive Science Colloquium, May 2018.
+  \item Association for Psychological Science Invited Address, May 2018.
+  \item UC Merced Cognitive Science Colloquium, April 2018.
+  \item Ewha and Yonsei University Colloquia, March 2018.
+  \item UCSD Psychology Colloquium, November 2017.
+  \item University of Maryland Cognitive Science Colloquium, September 2017.
+  \item Chegg, Inc. Data Science for Education Speaker Series, September 2017.
+  \item Keynote at Basque Center Stat Learning Conference, June 2017.
+  \item UBC Gold Medal Language Sciences Speaker Series, Feb 2017.
+  \item Keynote at XPRAG.de Satellite Symposium, May 2016.
+  \item Princeton Cognitive Science Colloquium, March 2016.
+  \item Harvard Psychology Colloquium, February 2016.
+  \item UNLV Psychology Colloquium, December 2015.
+  \item Brain and Mind Institute Opening Symposium, Chinese University of Hong Kong, November 2015.
+  \item Keynote at XPRAG.de (Experimental Pragmatics Workshop), July 2015.
+  \item Keynote at SocialNLP Workshop, North American Conference on Computational Linguistics (NAACL), June 2015.
+  \item Google Tech Talks, March 2015.
+  \item Pennsylvania State University, Young Scholar Series, January 2015.
+  \item University of Edinburgh, School of Informatics, August 2014.
+  \item UC Merced Psychology Colloquium, March 2014.
+  \item Indiana University Cognitive Science Colloquium, February 2014.
+  \item Society for Language Development Invited Symposium, ``Mechanisms of word learning,'' November 2013.
+  \item Child Development Society Invited Symposium, ``Science at an exhibition: What we learn from studying children in museums,'' October 2013.
+  \item Morris Symposium (at Stony Brook Linguistics), ``What counts in language and cognition: Number and quantification in the mind/brain,'' September 2013.
+  \item NYU Linguistics Colloquium, September 2013.
+  \item Max Planck Institute for Psycholinguistics (Nijmegen, Netherlands), Invited Symposium, ``Challenges for the field of language development,'' October 2012.
+  \item RIKEN Brain Sciences Institute (Tokyo, Japan), July 2012.
+  \item UC Berkeley Program in Undergraduate Research Keynote, April 2012.
+  \item UC Merced Cognitive Science Colloquium, April 2012.
+  \item UC Santa Cruz Psychology Colloquium, April 2012.
+  \item UC Berkeley Cognitive Science Colloquium, February 2012.
+  \item University of Michigan Theme Semester, ``Language: the Human Quintessence,'' January 2012.
+  \item Australian National University Linguistics Colloquium, August 2011.
+  \item Macquarie University (Sydney, Australia) Workshop on Language, Logic, and Learning, August 2011.
+  \item Stanford Undergraduate Psychology Conference Keynote, May 2011.
+  \item UMD Linguistics Colloquium, October 2010.
+  \item International Research Training Group on Language Technology and Cognitive Systems, Kloster Irsee (Munich, Germany), June 2009.
+  \item University of Edinburgh School of Informatics Colloquium, June 2009.
+  \item Conference on Natural Language Learning (CoNLL) Keynote, June 2009.
+  \item Psychonomic Society Invited Symposium, `` Language as a Tool for Thinking,'' November 2008.
+\end{itemize}
+
+\section*{Mentorship}
+
+\subsection*{Postdoctoral and Other Supervision}
+\begin{itemize}
+  \item Mika Braginsky -- current software developer
+  \item Amy Lightbody -- current research scientist
+  \item Rebecca Zhu -- current postdoc
+  \item Mira Nencheva -- current postdoc
+  \item Heidi Baumgartner -- Executive Director, ManyBabies -- current research scientist
+  \item Katherine Shannon -- current postdoc (NIH F32), co-advised Hyowon Gweon
+  \item Nicholas Coles -- Executive Director, Psychological Science Accelerator -- former research scientist, Assistant Professor, University of Florida
+  \item Bria Long -- former postdoc (NSF SBE Postdoc Fellowship, NIH K99/R00), Assistant Professor, UCSD
+  \item Yang Wu -- former postdoc, co-advised Hyowon Gweon, Assistant Professor, University of Toronto
+  \item George Kachergis -- former research scientist
+  \item Georgia Loukatou -- former postdoc
+  \item Alexandra Carstensen -- former postdoc -- Assistant Professor, Arizona State University
+  \item Pooja Paul -- former postdoc, CSLI Fellow
+  \item Judy Fan -- former postdoc, co-advised Daniel Yamins -- Assistant Professor, Stanford
+  \item Angeline Tsui -- former postdoc -- Huawei, Inc.
+  \item Tom Hardwicke -- former postdoc, co-supervised with METRICS meta-research center -- University of Melbourne
+  \item Manuel Bohn -- former postdoc (Marie Curie Fellowship) -- Assistant Professor, Leuphana University
+  \item Abdellah Fourtassi - former postdoc (Fyssen Fellowship) -- Assistant Professor, University of Marseilles
+  \item Emily Hembacher -- former postdoc (Stanford Child Health Research Initiative grantee)
+  \item Gabriel Doyle -- former postdoc -- Assistant Professor, San Diego State University
+  \item Daniel Yurovsky -- former postdoc (NIH NRSA award through NICHD, Anne Fernald, co-mentor) -- Assistant Professor, Carnegie Mellon University -- Amazon
+  \item Guido Pusiol -- former postdoc (co-advised, Fei-Fei Li, CS Department), currently Stanford CS postdoc
+  \item Brandon C. Roy -- former postdoc (co-advised, Deb Roy, MIT Media Lab), currently Twitter, Inc.
+\end{itemize}
+
+\subsection*{Graduate Students}
+\begin{itemize}
+  \item Steven Feng -- current graduate student
+  \item Julio Martinez -- current graduate student
+  \item Samah Abdelrahim -- current graduate student
+  \item Alvin Tan -- current graduate student
+  \item Anjie Cao -- current graduate student
+  \item Veronica Boyce -- current graduate student
+  \item Rondeline Williams, Ford Fellowship, NSF Honorable Mention -- current graduate student
+  \item Eva Portelance (Linguistics) -- former graduate student -- Assistant Professor, HEC Montreal
+  \item Ben Peloquin -- former graduate student -- Meta AI research
+  \item Erica Yoon -- former graduate student, NSERC (Canadian NSF-equivalent) Fellow -- Assistant Professor, San Mateo Community College
+  \item Masoud Jasbi -- former graduate student (co-advised, Eve Clark, Linguistics) -- postdoc Harvard -- Assistant Professor, UC Davis
+  \item Kyle MacDonald -- former graduate student, NSF Graduate Fellowship -- postdoc UCLA
+  \item Molly L. Lewis -- former graduate student, NSF Honorable Mention -- Special Faculty, Carnegie Mellon
+  \item Ann E. Nordmeyer -- former graduate student, NSF Graduate Fellowship -- Assistant Professor, Southern New Hampshire University
+  \item Alexandra Horowitz -- former graduate student, Stanford Weiland Fellow -- Facebook
+  \item Marissa Casillas (Linguistics) -- former graduate student (co-advised, Eve Clark, Linguistics) -- Assistant Professor, University of Chicago
+\end{itemize}
+
+\subsection*{Ph.D Committee Memberships}
+(Psychology Department except where noted.)
+
+\begin{itemize}
+  \item Ben Prystawski, Atticus Geiger, Aaron Chuey, Michael Hahn (Linguistics), Ben Stenhaug (Education), Natalia V\'elez, Arianna Yuan, Sophie Bridgers, Erin Bennett, Cai Guo, Mika Asaba, Robert Hawkins, Michael Henry Tessler, Robin Melnick (Linguistics), Phil Crone (Linguistics), Eleanor Chestnut, Alex Genevsky, Justine Kao, Ricardo Bion, Sarah Gripshover, Taylor Holubar, Daniel Hawthorne, Long Ouyang, Chigusa Kurumada (Linguistics), Marisa Casillas (Linguistics), Hilarie Mazur, Brandon Roy (MIT Media Lab), Lucas Butler, Jennifer Yoon, Hanna Popick, Steven Flusberg, Jessica Tsang (Education), Bokyung Kim (Communication)
+\end{itemize}
+
+\subsection*{Research Assistants}
+\begin{itemize}
+  \item Meesha Ryan -- current RA
+  \item Grace Keene -- current RA
+  \item Robert Sparks -- current RA
+  \item Jessica Mankewitz -- former RA, now Psychology PhD student, UW Madison
+  \item Samaher Radwan -- former RA, now Stanford Graduate School of Education
+  \item Benjamin deMayo -- former RA, now Psychology PhD student, Princeton
+  \item Megan Merrick -- former RA, now Psychology PhD student, University of Indiana
+  \item Vivian Zhang -- former RA, now Psychology PhD student, Cornell
+  \item Jacqueline Quirke -- former RA
+  \item Alessandro Sanchez -- former RA
+  \item Danielle Kellier -- former RA, UPenn medical school
+  \item Veronica Cristiano -- former RA, now SLP student, Gallaudet
+  \item Rose Schneider -- former RA, now Psychology PhD student, UCSD
+  \item Mika Braginsky -- former RA, now Psychology PhD student, MIT
+  \item Andrew Weaver -- former RA
+  \item Sarah James -- former RA
+  \item Janelle Klaas -- former RA
+  \item Allison Kraus -- former RA
+  \item Stephan Meylan -- former RA, PhD Berkeley, Postdoc MIT
+  \item Theresa Hennings -- former RA
+\end{itemize}
+
+\subsection*{Selected Masters, Undergraduate, and High School Students}
+(All undergraduates listed participated in laboratory research for at least 2--3 quarters.)
+
+\begin{itemize}
+  \item Stanford:
+  \begin{itemize}
+    \item Alvin Tan (2022) -- SSP MS
+    \item Isabella Duan (2021) -- HumBio BS, honors thesis
+    \item Elizabeth Swanson (2021) -- HumBio BS, honors thesis
+    \item Claire Baker (2021) -- HumBio BS, honors thesis
+    \item Hannah Marshall (2021)-- Psych BS, honors thesis
+    \item Gloria Yi (2021) -- Symbolic Systems BS, honors thesis
+    \item Khuyen Le (2021) -- Symbolic Systems BS, honors thesis
+    % \item Molly Irvin (2020) -- Psych BA, honors thesis co-supervised with Hyo Gweon
+    \item Tania Dhaliwal (2020) -- SSP BS, honors thesis
+    \item Sophie Regan (2020) -- SSP BS, honors thesis, SSP MS
+    \item Hang Jiang (2020) -- SSP MS, PhD MIT Media Lab
+    \item Benjamin deMayo (2018) -- psych BA, honors thesis
+    \item Tamara Mekler (2017) -- HumBio BA, honors thesis
+    \item Allison Dods (2016) -- Symbolic Systems BS, honors thesis
+    \item Benjamin Peloquin (2016) -- Symbolic Systems MS
+    \item Sarah Case (2016) -- HumBio BA, honors thesis
+    \item Rachel Chung (2015) -- Science, Technology, \& Society BS, honors thesis, Haas Fellow
+    \item Nicholas Moores (2015) -- Ling BA, Psych MA, honors thesis, UAR Major Grant
+    \item Elise Sugarman (2014) -- Symbolic Systems BS, honors thesis, UAR Major Grant
+    \item Laura Soriano (2014) -- HumBio BA, honors thesis, UAR Major Grant
+    \item Stephanie Muscat (2013) -- HumBio BA, honors thesis (Dornbusch award), UAR Major Grant
+    \item Kaia Simmons (2013) -- HumBio BA, honors thesis (Dornbusch award), UAR Major Grant
+    \item Stephanie Nicholson (2013) -- Psych BA, UAR Major Grant (declined), Beinecke Scholar
+    \item Rebecca Chung (2013) -- SymSys BS, honors thesis
+    \item Monchette Gonda (2013) -- HumBio BA, reading on Cog Neuro of Language (with Sam McClure)
+    \item Binna Kim (2012) -- Psych BA, Psych co-term
+    \item Maya Mathur (2012) -- Psych BA, Statistics co-term, Harvard PhD, Assistant Professor, Stanford QSU
+    \item Cybelle Smith (2012) -- Ling BA, now PhD student University of Illinois, NSF GRFP
+    \item Alex Stiller (2012) -- Symbolic Systems MS, now Linguistics PhD student UCSD, Adjunct, San Diego Community College
+    \item Adrienne Gispen (2011) -- SymSys BS, DAAD fellow in Germany
+  \end{itemize}
+
+  \item Other Institutions:
+  \begin{itemize}
+    \item Naiti Bhatt -- CSLI intern (Scripps)
+    \item Charles Wu -- CSLI intern (Wabash), now PhD student, CMU
+    \item Liza Benabbas -- RISE intern, Emoryville HS
+    \item Angelica Perez -- RISE intern, Eastside College Prep (HS), Yale undergraduate
+    \item Allison Gofman -- Hendrick Hudson School (HS), Intel Semifinalist, Harvard undergraduate
+    \item Avril Kenney -- MIT SB, now M.Eng. student at MIT
+    \item Peter Lai -- MIT SB, now software engineer at Crocodoc
+    \item Denise Ichinco -- MIT SB, now software engineer at Smarter Travel Media
+  \end{itemize}
+\end{itemize}
+
+
+\section*{Service}
+
+\subsection*{Editorial Service}
+
+\begin{itemize}
+\item Co-Editor-in-Chief, Open Encyclopedia of Cognitive Sciences, MIT Press.
+\item Special issue editor, ``Large Language Models``, Language Development Research (2023)
+\item Special section editor for Registered Reports, Child Development (2020--2023)
+\item Special issue editor, ``Replication, Collaboration, and Best Practices in Infancy Research,'' Infant Behavior and Development (2019)
+\item Ad-hoc editor, Proceedings of the National Academy of Sciences (5 articles, 2016--2020)
+\item Associate Editor: Cognition (2016--2017)
+\item Editorial Board: Cognitive Science Journal (2010--present), Journal of Experimental Psychology: General (2016--present), Advances in Methods and Practices in Psychological Science (AMPPS) (2017--present)
+\item Conference reviewing: Boston University Conference on Language Development; Neural Information Processing Systems; International Conference on Infant Studies; Association for Computational Linguistics; Semantics and Linguistic Theory (SALT); and others.
+\item Ad-hoc reviewer: Child Development, Cognition, Cognitive Science, Developmental Psychology, Developmental Science, Journal of Memory and Language, Nature Human Behavior, Proceedings of the National Academy of Sciences, Psychological Review, Psychological Science, Science, Nature, and others.
+\item Program Committee: Cognitive Science Society Annual Meeting (2010--present), Workshop on Cognitive Modeling and Computational Linguistics (at the Association for Computational Linguistics meeting, 2010--2013)
+\end{itemize}
+
+\subsection*{Governance}
+
+\begin{itemize}
+  \item Founder and governing board member, ManyBabies Consortium (2015--Present)
+  \item Governing Board: Cognitive Science Society (2015--2021), elected position; President (2018--2019)
+  \item Founding Member and Interim Executive Committee: Society for the Improvement of Psychological Science (2016--2018)
+  \item Advisory Board: MacArthur-Bates Communicative Development Inventory (2014--present), Databrary (2016--2010)
+  \item Executive board member: Linguistic Society of America (2007--2009)
+  \item Organizational board: CUNY Sentence Processing Conference (2011), Stanford Child Language Research Forum (2009)
+
+\end{itemize}
+
+
+\subsection*{Departmental and University Service}
+\begin{itemize}
+  \item Director, Symbolic Systems Program (2020--present, on leave 2024--2025)
+  \item Director, Center for the Study of Language and Information (2020--present)
+  \item Chair, Stanford Psychology Statistics Committee (2017--present)
+  \item Stanford Psychology Diversity Committee (2017--2020)
+  \item Acting Director, Center for the Study of Language and Information (2016--2017)
+  \item Organizer, Center for the Study of Language and Information (CSLI) Summer Program for undergraduate research experiences (2014--present)
+  \item Bing Nursery School Scientific Advisory Board (2012--present)
+\end{itemize}
+
+\subsection*{Other Service}
+
+\begin{itemize}
+  \item National Academy of Sciences Committee, Research and Application in Team Science (2024 -- 2025)
+  \item National Children's Study: Cognitive Health Domain Team Member (2014--2015)
+  \item APS Search Committee for Editor in Chief for new Advances in Methodologies and Practices in Psychological Science (AMPPS) journal
+  \item Founding board member and former secretary, The I-HELP Liberia Project, Inc., not-for-profit 501(c)(3) dedicated to improving math and science education in Liberia.
+  \item Parent Board Member, Children's Center of the Stanford Community (2017-2018, 2020--present).
+  \item Continuing memberships in: Cognitive Science Society, International Society for Infant Studies, Society for Research in Child Development, Association for Psychological Science, Society for the Improvement of Psychological Science
+\end{itemize}
+
+\section*{Media Coverage and Outreach}
+
+\begin{itemize}
+\item Outreach using the social web to promote cognitive science and developmental psychology:
+\begin{itemize}
+  \item Twitter/X: \href{http://twitter.com/mcxfrank}{$@$mcxfrank} (>14,000 followers)
+  \item Bluesky: \href{https://bsky.app/profile/mcxfrank.bsky.social}{@mcxfrank.bsky.social} (>1,000 followers)
+  \item Blogging at \href{http://babieslearninglanguage.blogspot.com}{Babies Learning Language} ($\sim$ 100 posts over 7 years)
+\end{itemize}
+
+\begin{itemize}
+\item Podcasts
+\begin{itemize}
+  \item \href{https://parentdata.org/learning-to-speak/}{Emily Oster Podcast}
+  \item \href{https://engineering.stanford.edu/magazine/future-language-learning}{The Future of Everything}
+  \item \href{https://braininspired.co/podcast/171/}{Brain Inspired}
+  \item \href{https://www.philosophytalk.org/shows/can-ai-help-us-understand-babies}{Philosophy Talk}
+\end{itemize}
+
+
+  \item Frank et al. (2020). ``Variability and Consistency in Children's Early Language: The Wordbank Project"
+  \begin{itemize}
+    \item The Atlantic ``The Mystery of Babies’ First Words.'' (Spring 2019).
+    \item Stanford Magazine. (March 2020).
+  \end{itemize}
+
+  \item ManyBabies Consortium (2020). ``Quantifying sources of variability in infancy research using the infant-directed speech preference.''
+  \begin{itemize}
+    \item \href{https://news.stanford.edu/2020/03/16/babies-love-baby-talk-world/}{Stanford Report}, \href{https://www.psychologytoday.com/us/blog/the-athletes-way/202004/baby-talk-is-universal-language}{Psychology Today}.
+  \end{itemize}
+
+
+  \item Meylan et al. (2017). ``The emergence of an abstract grammatical category in children's early speech''
+  \begin{itemize}
+    \item Reported in \href{https://news.stanford.edu/2017/02/22/new-research-toddlers-grammar-skills-learned-not-innate/}{Stanford Report}, \href{https://www.sciencedaily.com/releases/2017/04/170406091544.htm}{Science Daily}
+  \end{itemize}
+
+  \item Anderson et al. (2016): Response to comment on ``Estimating the reproducibility of psychological science''
+  \begin{itemize}
+    \item Reported in many major media outlets, including Slate, The Atlantic, etc.
+  \end{itemize}
+
+  \item Roy et al. (2015): ``Predicting the birth of a spoken word''
+  \begin{itemize}
+    \item Reported in Stanford Report, Science News, Spectrum.de, Focus.it
+  \end{itemize}
+
+  \item Open Science Collaboration (2015): ``Estimating the reproducibility of psychological science''
+  \begin{itemize}
+    \item Reported in many major media outlets, including New York Times, Washington Post, Nature, Science, The Atlantic, etc.
+    \item Personally conducted radio interviews for WNYC and for KUSP
+  \end{itemize}
+
+  \item Frank \& Goodman (2012): ``Predicting pragmatic reasoning in language games''
+  \begin{itemize}
+    \item Reported in Stanford Report, Science Daily, Wired Magazine, EFE Newswire.
+  \end{itemize}
+
+  \item Frank \& Barner (2011): ``Representing exact number visually using mental abacus''
+  \begin{itemize}
+    \item Reported in Stanford Report, Discover Magazine Online, New Scientist, India Express, Times of India.
+  \end{itemize}
+
+  \item Frank, Vul, \& Johnson (2009): ``Development of infants' attention to faces in the first year''
+  \begin{itemize}
+    \item Reported in Babytalk magazine, April 2009.
+  \end{itemize}
+
+  \item Frank et al. (2008): ``Number as a  cognitive technology: Evidence from Pirah\~a language and cognition''
+  \begin{itemize}
+    \item Reported on \texttt{sciencenews.org}, Language Log, \texttt{slashdot.org}, London Telegraph, Discover Magazine (100 Top Science Stories of 2008).
+  \end{itemize}
+\end{itemize}
+
+\bigskip
+
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \texttt{\footerlink}
+  \end{footnotesize}
+\end{center}
+
+
+% \bibliographystyle{apa}
+% \printbibliography
+
+\end{document}
