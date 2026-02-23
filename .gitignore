@@ -1,0 +1,11 @@
+.venv/
+.env
+.secrets
+__pycache__/
+*.pyc
+*.log
+logs/*.log
+bib/citations.bib
+merge_map.json
+.pytest_cache/
+*.egg-info/
