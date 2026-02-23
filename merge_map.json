@@ -1,0 +1,19 @@
+{
+  "description": "Review and apply with --apply-merge-map. merge_into: key_to_drop -> key_to_keep.",
+  "drop": [
+    "geiger2020b",
+    "frank2010modeling",
+    "yurovsky2014beyond",
+    "ouyang2012semantic",
+    "fourtassi2019continuous",
+    "horowitz2015young"
+  ],
+  "merge_into": {
+    "geiger2020b": "geiger2020",
+    "frank2010modeling": "frank2007modeling",
+    "yurovsky2014beyond": "yurovsky2015beyond",
+    "ouyang2012semantic": "ouyang2017semantic",
+    "fourtassi2019continuous": "fourtassi2020continuous",
+    "horowitz2015young": "horowitz2013young"
+  }
+}

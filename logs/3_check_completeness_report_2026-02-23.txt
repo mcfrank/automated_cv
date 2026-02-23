@@ -1,0 +1,17 @@
+# Completeness report
+Missing required fields: 9
+
+  frank2024 (article): missing journal
+  chuey2024b (article): missing journal
+  domingue2024 (article): missing journal
+  stenhaug2021structrue (article): missing journal
+  stenhaug2022 (article): missing journal
+  liu2019 (article): missing journal
+  yurovsky2017developmental (article): missing journal
+  frank2017rational (article): missing journal
+  lewis2017a-quantitative (article): missing journal
+
+DOI normalized: 0
+DOI added: 0
+CogSci enriched: 0
+Duplicate year fixed: 0

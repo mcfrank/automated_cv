@@ -1,0 +1,31 @@
+# Citation validation report
+Missing citekeys (in tex but not in bib): 0
+
+
+Uncited keys (in bib but not in tex): 24
+  - asaba2025
+  - bohn2025b
+  - chuey2024b
+  - domingue2024
+  - frank2011computational
+  - frank2012measuringchildrens
+  - frank2017rational
+  - frank2024
+  - frermann2017prosodic
+  - kachergis2022b
+  - lewis2017a-quantitative
+  - liu2019
+  - long2023developmental
+  - long2024
+  - mankewitz2021
+  - nordmeyer2014a-pragmatic
+  - novack2025
+  - portelance2021
+  - stenhaug2021structrue
+  - stenhaug2022
+  - tessler2016avoiding
+  - wilson2023
+  - yurovsky2017developmental
+  - zhou2024
+
+## Possible missing papers (for manual review)
