@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """
-Streamlit UI to review merge_map.json: for each suggested pair, choose Merge or Don't merge.
-Saves only approved merges back to merge_map.json for use with 1_merge_bib.py --apply-merge-map.
+DEPRECATED: Use the unified UI instead: streamlit run scripts/approve_citations_ui.py
+(merge review + new papers review + Apply in one app).
+
+This script is kept for backwards compatibility. It reviews merge_map.json only.
 """
 from __future__ import annotations
 

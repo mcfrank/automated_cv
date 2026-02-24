@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
 """
-Merge bib/current_citations.bib and bib/website_citations.bib into bib/citations.bib.
-Output merge_map.json for close matches (fuzzy match on title + first author).
-Optionally apply an existing merge_map.json. Enrich missing DOIs via CrossRef.
+DEPRECATED: Use the refactored pipeline instead:
+  1. python scripts/1_gather_candidates.py   (gather + merge_map, no DOI enrich)
+  2. python scripts/2_check_completeness_enrich.py --write
+  3. streamlit run scripts/approve_citations_ui.py  (review, then Apply)
+  4. python scripts/4_generate_publications.py
+
+This script is kept for backwards compatibility. It merges bib files, outputs
+merge_map.json, and optionally applies merge_map and enriches DOIs via CrossRef.
 """
 from __future__ import annotations
 

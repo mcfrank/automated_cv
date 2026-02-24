@@ -60,6 +60,18 @@ def is_my_work(entry: dict, author_substring: str = "Frank") -> bool:
     return author_substring.lower() in author.lower()
 
 
+def entry_has_required_fields(entry: dict) -> tuple[bool, list[str]]:
+    """Return (ok, list of missing critical fields). Critical: author, title, year."""
+    missing = []
+    if not (entry.get("title") or "").strip():
+        missing.append("title")
+    if not (entry.get("author") or "").strip():
+        missing.append("author")
+    if not (entry.get("year") or "").strip():
+        missing.append("year")
+    return (len(missing) == 0, missing)
+
+
 def sort_key_for_entry(entry: dict) -> tuple:
     from scripts import bib_utils
     y = bib_utils.normalize_year(entry.get("year"))
@@ -103,7 +115,24 @@ def main() -> None:
 
     entries = bib_utils.load_bib(bib_path)
     my_entries = {k: v for k, v in entries.items() if is_my_work(v)}
-    log.info("Total entries %d; my works %d", len(entries), len(my_entries))
+    # Exclude entries missing critical fields (author, title, year) so they don't appear in publications.tex
+    complete_entries = {}
+    excluded_incomplete = []
+    for k, v in my_entries.items():
+        ok, missing = entry_has_required_fields(v)
+        if ok:
+            complete_entries[k] = v
+        else:
+            excluded_incomplete.append((k, missing))
+    if excluded_incomplete:
+        log.warning(
+            "Excluded %d entries with missing critical fields (not added to publications.tex): %s",
+            len(excluded_incomplete),
+            [(k, missing) for k, missing in excluded_incomplete],
+        )
+    my_entries = complete_entries
+    log.info("Total entries %d; my works (complete) %d; excluded incomplete %d",
+             len(entries), len(my_entries), len(excluded_incomplete))
 
     sections = {
         SECTION_BOOKS: [],
